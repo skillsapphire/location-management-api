@@ -18,4 +18,11 @@ Step12: git checkout -b 2_feature_create_controller_for_crud
 Step13: Create new controller package and controller class
 Step14: annotate the controller with with @RestController, @GetMapping,
         @PostMapping, @PutMapping, @DeleteMapping
-Step15:
+Step15: git add .
+        git commit -m "location mgmt app"
+        git push --set-upstream origin 2_feature_create_controller_for_crud
+============================================================================
+Step16: Creating location entity and add spring-data-jpa, h2 DB dependency
+        configure application.properties with DB details
+Step17: Modifying the controller endpoints with location entity
+Step18: Add @RequestParam, @PathVariable, @RequestBody, @ResponseBody
