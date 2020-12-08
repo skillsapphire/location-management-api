@@ -31,3 +31,8 @@ Step16: Creating location entity and add spring-data-jpa, h2 DB dependency
 Step17: Adding LocationRepository
 Step18: Modifying the controller endpoints with location entity
 Step19: Add @RequestParam, @PathVariable, @RequestBody, @ResponseBody
+        git add .
+        git commit -m "DB integration, create and get flow integrated"
+        git push --set-upstream origin 4_feature_update_controller_create_repository
+
+=============================================================================
