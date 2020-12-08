@@ -24,5 +24,4 @@ Step15: git add .
 ============================================================================
 Step16: Creating location entity and add spring-data-jpa, h2 DB dependency
         configure application.properties with DB details
-Step17: Modifying the controller endpoints with location entity
-Step18: Add @RequestParam, @PathVariable, @RequestBody, @ResponseBody
+============================================================================
