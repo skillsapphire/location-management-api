@@ -1,1 +1,7 @@
 http://localhost:8080/lma/v1/locations
+
+H2 file db login
+-----------------
+http://localhost:8080/h2
+jdbc:h2:file:./devdb
+sa

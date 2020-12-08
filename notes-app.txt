@@ -24,4 +24,10 @@ Step15: git add .
 ============================================================================
 Step16: Creating location entity and add spring-data-jpa, h2 DB dependency
         configure application.properties with DB details
+        git add .
+        git commit -m "location mgmt app"
+        git push --set-upstream origin 3_feature_create_entity_update_controller
 ============================================================================
+Step17: Adding LocationRepository
+Step18: Modifying the controller endpoints with location entity
+Step19: Add @RequestParam, @PathVariable, @RequestBody, @ResponseBody

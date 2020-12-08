@@ -1,0 +1,3 @@
+2020-12-08 21:39:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "LOCATION" not found; SQL statement:
+insert into location (id, lat, lng, type) values (null, ?, ?, ?) [42102-199]

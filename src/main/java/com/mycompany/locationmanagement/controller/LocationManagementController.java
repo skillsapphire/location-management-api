@@ -1,35 +1,60 @@
 package com.mycompany.locationmanagement.controller;
 
+import com.mycompany.locationmanagement.entity.Location;
+import com.mycompany.locationmanagement.repository.LocationRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/lma/v1")
 public class LocationManagementController {
 
+    @Autowired
+    private LocationRepository locationRepository;
+
     @GetMapping("/locations")
-    public void getAllLocations(){
-        System.out.println("locations");
+    public List<Location> getAllLocations(){
+        List<Location> locations = locationRepository.findAll();
+        return locations;
     }
 
     @GetMapping("/locations/{id}")
-    public void getLocationDetail(){
+    public Location getLocationDetail(@PathVariable Long id){
         System.out.println("locations/id");
+        Optional<Location> locationOpt = locationRepository.findById(id);
+        if(locationOpt.isPresent()){
+            return locationOpt.get();
+        }
+        return null;
     }
 
     @PostMapping("/locations")
-    public void createLocation(){
-
+    public void createLocation(@RequestBody Location location){
+        locationRepository.save(location);
     }
 
     @PutMapping("/locations")
-    public void updateLocation(){
-
+    public void updateLocation(@RequestBody Location location){
+        Optional<Location> locationInDbOpt = locationRepository.findById(location.getId());
+        if(locationInDbOpt.isPresent()){
+            if(null != location.getLat()){
+                locationInDbOpt.get().setLat(location.getLat());
+            }
+            if(null != location.getLng()){
+                locationInDbOpt.get().setLng(location.getLng());
+            }
+            if(null != location.getType()){
+                locationInDbOpt.get().setType(location.getType());
+            }
+            locationRepository.save(locationInDbOpt.get());
+        }
     }
 
-    @DeleteMapping("/locations")
-    public void deleteLocation(){
-
+    @DeleteMapping("/locations/{id}")
+    public void deleteLocation(@PathVariable Long id){
+        locationRepository.deleteById(id);
     }
 }
