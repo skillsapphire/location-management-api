@@ -1,0 +1,9 @@
+1. git clone  https://github.com/skillsapphire/location-management-api.git
+
+2. Default branch will be master
+Create a new local branch:
+git checkout -b <branch-name> # Create a new branch and check it out
+git checkout -b 1_feature_setup
+git push --set-upstream origin 1_feature_setup
+
+
