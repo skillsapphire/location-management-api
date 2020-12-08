@@ -1,0 +1,16 @@
+Step1 : go to https://start.spring.io/
+Step2 : create new springboot app add web and test
+Step3 : download and extract the zip
+Step4 : download and install intellij community version
+https://www.jetbrains.com/idea/download/
+Step5 : open intellij and import the extracted springboot project
+Step6 : create a github repo
+Step7 : follow steps to push existing folder
+Step8 : create new branch in local and push to github(see notes-git.txt)
+Step9 : build project run:-  mvn clean install
+Step10: Run as java application to MainApp.java file
+Step11: Commit the files to the branch
+        git add .
+        git commit -m "initial project setup"
+        git push
+============================================================================

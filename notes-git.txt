@@ -4,6 +4,7 @@
 Create a new local branch:
 git checkout -b <branch-name> # Create a new branch and check it out
 git checkout -b 1_feature_setup
+git add .
+git commit -m "new branch created"
 git push --set-upstream origin 1_feature_setup
-
 
