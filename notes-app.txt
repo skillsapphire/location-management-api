@@ -36,3 +36,5 @@ Step19: Add @RequestParam, @PathVariable, @RequestBody, @ResponseBody
         git push --set-upstream origin 4_feature_update_controller_create_repository
 
 =============================================================================
+Step20: Modify controller methods to return ResponseEntity
+Step21: Handle Resource not found exception

@@ -1,3 +1,6 @@
+https://bezkoder.com/spring-boot-jpa-crud-rest-api/
+https://howtodoinjava.com/spring-boot2/spring-boot-crud-hibernate/
+
 http://localhost:8080/lma/v1/locations
 
 H2 file db login
