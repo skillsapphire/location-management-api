@@ -8,3 +8,19 @@ git add .
 git commit -m "new branch created"
 git push --set-upstream origin 1_feature_setup
 
+=====================================================
+
+create a new repository on the command line
+echo "# todo-complete-spring-boot" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/skillsapphire/todo-complete-spring-boot.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/skillsapphire/todo-complete-spring-boot.git
+git branch -M main
+git push -u origin main
+
