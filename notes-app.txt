@@ -38,3 +38,5 @@ Step19: Add @RequestParam, @PathVariable, @RequestBody, @ResponseBody
 =============================================================================
 Step20: Modify controller methods to return ResponseEntity
 Step21: Handle Resource not found exception
+Step22: added .gitignore file
+=============================================================================
