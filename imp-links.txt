@@ -1,10 +1,34 @@
+ResponseEntity & Exception handling
+========================================
 https://bezkoder.com/spring-boot-jpa-crud-rest-api/
+
+JPA & Springboot API
+=========================
 https://howtodoinjava.com/spring-boot2/spring-boot-crud-hibernate/
 
-http://localhost:8080/lma/v1/locations
+Junit & Mockito & Mvc
+=====================
+https://mkyong.com/spring-boot/spring-boot-junit-5-mockito/
 
-H2 file db login
------------------
+API endpoint
+=================
+GET
+http://localhost:8080/lma/v1/locations
+GET
+http://localhost:8080/lma/v1/locations/1
+DELETE
+http://localhost:8080/lma/v1/locations/1
+POST
+http://localhost:8080/lma/v1/locations
+{
+"type": "Office",
+"lat": "2226.88",
+"lng": "25426.99"
+}
+
+=========================================
+H2 file db login details
+-------------------------
 http://localhost:8080/h2
 jdbc:h2:file:./devdb
 sa
